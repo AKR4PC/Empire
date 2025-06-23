@@ -67,7 +67,7 @@ const FloatingActions = ({
           <TooltipTrigger asChild>
             <Button
               onClick={onDownload}
-              className="rounded-full w-12 h-12 bg-purple-600 hover:bg-purple-700"
+              className="rounded-full w-12 h-12 bg-zinc-700 hover:bg-zinc-800"
             >
               <Download className="h-5 w-5 text-white" />
             </Button>
@@ -135,7 +135,7 @@ const AnalysisCard = ({
         <CardHeader>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="bg-purple-900/30 rounded-full w-8 h-8 flex items-center justify-center text-purple-400 font-semibold">
+              <div className="bg-zinc-800/30 rounded-full w-8 h-8 flex items-center justify-center text-zinc-400 font-semibold">
                 {index + 1}
               </div>
               <CardTitle className="text-lg text-gray-200">
@@ -189,7 +189,7 @@ const AnalysisCard = ({
               variant="ghost"
               size="sm"
               onClick={() => setIsExpanded(true)}
-              className="mt-2 text-purple-400 hover:text-purple-300"
+              className="mt-2 text-zinc-400 hover:text-zinc-300"
             >
               Read more
             </Button>
@@ -484,9 +484,9 @@ ${a.content}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.3, delay: 0.4 }}
               >
-                <Brain className="w-8 h-8 mb-2 text-purple-500" />
+                <Brain className="w-8 h-8 mb-2 text-zinc-500" />
               </motion.div>
-              <CardTitle className="text-xl text-purple-500">
+              <CardTitle className="text-xl text-zinc-500">
                 Groq Processing
               </CardTitle>
               <CardDescription className="text-gray-400">
@@ -651,7 +651,7 @@ ${a.content}
                 className="grid grid-cols-1 gap-6 mt-8"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-2xl font-bold text-purple-900">
+                  <h2 className="text-2xl font-bold text-zinc-900">
                     Analysis Results
                   </h2>
                   <Button

@@ -12,8 +12,8 @@ export const Navbar = () => {
           <Link href="/" className={cn("text-white font-bold text-lg tracking-wide nav-link", MinecartLCD.className)}>
             HOME
           </Link>
-          <Link href="/products" className={cn("text-white font-bold text-lg tracking-wide nav-link", MinecartLCD.className)}>
-            PRODUCTS
+          <Link href="/docs" className={cn("text-white font-bold text-lg tracking-wide nav-link", MinecartLCD.className)}>
+            COMPONENTS
           </Link>
           <Link href="/features" className={cn("text-white font-bold text-lg tracking-wide nav-link", MinecartLCD.className)}>
             FEATURES

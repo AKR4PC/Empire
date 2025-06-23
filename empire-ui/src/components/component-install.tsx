@@ -4,6 +4,8 @@ import CodeRenderer from "./code-renderer";
 import { extractCodeFromFilePath } from "@/lib/code";
 import { Button } from "./ui/button";
 import { Download } from "lucide-react";
+import { MinecartLCD } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 
 type ComponentInstallProps = {
   cli: string;
@@ -50,7 +52,7 @@ export default function ComponentInstall({
   const cliCommand = cli;
 
   return (
-    <div className="not-prose relative z-0 flex items-center justify-between pb-3">
+    <div className={cn("not-prose relative z-0 flex items-center justify-between pb-3", MinecartLCD.className)}>
       <Tabs defaultValue="cli" className="relative mr-auto w-full">
         <TabsList className="mb-4">
           <TabsTrigger value="cli">CLI</TabsTrigger>

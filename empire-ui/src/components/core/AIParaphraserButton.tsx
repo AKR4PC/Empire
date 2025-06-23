@@ -105,7 +105,7 @@ const AIPhraseButton: React.FC<AIPhraseButtonProps> = ({
               whileTap={{ scale: 1 }}
               whileHover={{ scale: 1.1 }}
               className={cn(
-                "p-3 bg-white text-zinc-800 border-2 border-black rounded-full transition-colors duration-200 hover:bg-zinc-100 hover:text-zinc-700",
+                "p-3 bg-zinc-800 text-zinc-300 border-2 border-zinc-700 rounded-full transition-colors duration-200 hover:bg-zinc-700 hover:text-zinc-200",
                 buttonClassName
               )}
               disabled={isPhrasing}
@@ -134,13 +134,13 @@ const AIPhraseButton: React.FC<AIPhraseButtonProps> = ({
         <div
           ref={phrasedTextRef}
           className={cn(
-            "mt-4 p-4 rounded-lg shadow-sm border max-w-full",
+            "mt-4 p-4 rounded-lg shadow-sm border border-zinc-700 bg-zinc-900 text-zinc-300",
             "overflow-x-auto break-words text-sm",
             "md:text-base",
             phrasedTextClassName
           )}
         >
-          <h3 className="text-lg font-semibold mb-2">Phrased Text:</h3>
+          <h3 className="text-lg font-semibold mb-2 text-zinc-200">Phrased Text:</h3>
           <p>{phrasedText}</p>
         </div>
       )}

@@ -35,7 +35,7 @@ const templates = [
     title: "OCR Application",
     description: "Image text extraction app with AI-powered analysis for processing documents and images.",
     image: "/assets/images/ocr-template.jpg",
-    icon: <FileCode className="w-10 h-10 text-purple-500" />,
+    icon: <FileCode className="w-10 h-10 text-zinc-500" />,
     category: "Tool",
     tags: ["Utility"],
     href: "/templates/ocr"
@@ -112,7 +112,7 @@ function getPlaceholderGradient(id: string): string {
 function getTagColor(tag: string): string {
   switch(tag) {
     case "Featured": return "bg-indigo-900/60 text-indigo-300 dark:bg-indigo-950 dark:text-indigo-300";
-    case "Popular": return "bg-purple-900/60 text-purple-300 dark:bg-purple-950 dark:text-purple-300";
+    case "Popular": return "bg-zinc-800/60 text-zinc-300 dark:bg-zinc-800 dark:text-zinc-300";
     case "New": return "bg-blue-900/60 text-blue-300 dark:bg-blue-950 dark:text-blue-300";
     default: return "bg-gray-800/60 text-gray-300 dark:bg-gray-900 dark:text-gray-300";
   }

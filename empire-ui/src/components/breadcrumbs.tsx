@@ -1,4 +1,6 @@
 import { ChevronRightIcon } from "lucide-react";
+import { MinecartLCD } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 
 interface BreadcrumbsProps {
   title: string;
@@ -6,7 +8,7 @@ interface BreadcrumbsProps {
 
 export const Breadcrumbs = ({ title }: BreadcrumbsProps) => {
   return (
-    <div className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
+    <div className={cn("mb-4 flex items-center space-x-1 text-sm text-muted-foreground", MinecartLCD.className)}>
       <div className="overflow-hidden text-ellipsis whitespace-nowrap">
         Docs
       </div>

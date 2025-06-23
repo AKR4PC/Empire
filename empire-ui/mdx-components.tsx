@@ -18,22 +18,22 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     table: (props) => (
       <table
-        className="min-w-min border-collapse text-left table-auto"
+        className="min-w-min w-full border-separate border-spacing-0 rounded-lg overflow-hidden"
         {...props}
       />
     ),
     th: (props) => (
       <th
-        className="border dark:border-zinc-800 px-4 py-2 text-sm font-bold text-black dark:text-white"
+        className="bg-white/10 px-4 py-3 text-sm font-semibold text-white uppercase tracking-wider border-b-2 border-white/15"
         {...props}
       />
     ),
     td: (props) => (
       <td
-        className="border dark:border-zinc-800 px-4 py-2 text-sm text-black dark:text-white"
+        className="px-4 py-3 text-sm text-white/90 border-b border-white/5"
         {...props}
       />
     ),
-    tr: (props) => <tr className="hover:bg-gray-800" {...props} />,
+    tr: (props) => <tr className="hover:bg-white/5 transition-colors" {...props} />,
   };
 }
